@@ -2,7 +2,14 @@
     <meta charset="utf-8">
     <title>River Valley Church</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/">
+    
+    <script type="text/javascript">
+        if (window.location.port == 4200) {
+            document.write('<base href="/" />');
+        } else {
+            document.write('<base href="' + document.location + '" />');
+        }
+    </script><base href="http://localhost:1864/">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
