@@ -1,8 +1,8 @@
-<!DOCTYPE html><html lang="en"><head><meta name="generator" content="Scully 0.0.0">
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="utf-8">
     <title>River Valley Church</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/rivervalley-deploy-prod/">
+    <base href="/">
 
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
@@ -23,9 +23,48 @@
 
     <!-- Needed to inject a node buffer equivalent into the browser. -->
     <script type="text/javascript">window.global = window;</script>
-<style>@charset "UTF-8";@import"https://use.typekit.net/vgh4ila.css";html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}strong{font-weight:bolder}img{border-style:none}html{box-sizing:border-box;font-size:100%}*,*:before,*:after{box-sizing:inherit}body{margin:0;padding:0;background:#231F20;font-family:realist,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.5;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{display:inline-block;vertical-align:middle;max-width:100%;height:auto;-ms-interpolation-mode:bicubic}div,td{margin:0;padding:0}strong{font-weight:700;line-height:inherit}a{line-height:inherit;color:#d4b976;text-decoration:none;cursor:pointer}a:hover,a:focus{color:#c9a753}@media print{*{background:transparent!important;color:#000!important;-webkit-print-color-adjust:economy;color-adjust:economy;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}tr,img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}}</style><link rel="stylesheet" href="styles.e5836eb1203c66bb.css" media="all" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.e5836eb1203c66bb.css"></noscript><script>window['ScullyIO']='generated';</script></head>
 
-<body scully-version="0.0.0"><app-root ng-version="13.1.3"><router-outlet></router-outlet><!----></app-root>
-<script id="ScullyIO-transfer-state"></script><script src="runtime.dd5700a04f17369d.js" type="module"></script><script src="polyfills.961ec5f657c87946.js" type="module"></script><script src="main.b1ae832d824f687a.js" type="module"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcwH4ofAAAAAMrpg4OhCEYdnNEWKSicHFxrrpzQ"></script>
+<style>@charset "UTF-8";@import"https://use.typekit.net/vgh4ila.css";html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}strong{font-weight:bolder}img{border-style:none}html{box-sizing:border-box;font-size:100%}*,*:before,*:after{box-sizing:inherit}body{margin:0;padding:0;background:#231F20;font-family:realist,Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.5;color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}img{display:inline-block;vertical-align:middle;max-width:100%;height:auto;-ms-interpolation-mode:bicubic}div,td{margin:0;padding:0}strong{font-weight:700;line-height:inherit}a{line-height:inherit;color:#d4b976;text-decoration:none;cursor:pointer}a:hover,a:focus{color:#c9a753}@media print{*{background:transparent!important;color:#000!important;-webkit-print-color-adjust:economy;color-adjust:economy;box-shadow:none!important;text-shadow:none!important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}tr,img{page-break-inside:avoid}img{max-width:100%!important}@page{margin:.5cm}}</style><link rel="stylesheet" href="styles.63c7b9f977658989.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.63c7b9f977658989.css"></noscript></head>
+
+<body>
+    <div id="not-supported" style="display: none; margin: 3rem auto 0rem auto; text-align: center;">
+        <table style="margin: 0 auto;">
+            <tbody><tr>
+                <td><img width="48" src="assets/images/hopestream-logo.png"></td>
+                <td style="font-family: vyasa, sans-serif; font-size: 36px; font-weight: 700; color: #323c47;">River Valley Church</td>
+            </tr>
+        </tbody></table>
+        <div style="text-align: left; background: #fafafa; border-radius: 3px; padding: 32px 40px; margin: 3rem auto 1rem auto; width: 350px;">
+            <div style="text-align: center; font-size: 18px;"><strong>Please Change Browsers</strong></div><br>
+            Please note that this site is supported only in the following browsers:<br>
+            <a href="https://www.google.com/chrome/">Chrome</a>, <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a>, <a href="https://support.apple.com/downloads/safari">Safari</a>, <a href="https://www.microsoft.com/en-us/windows/microsoft-edge">Microsoft Edge</a>.
+        </div>
+    </div>
+
+    <script>
+        // https://stackoverflow.com/questions/9847580/how-to-detect-safari-chrome-ie-firefox-and-opera-browser/9851769
+        function _IsInternetExplorer() {
+            return /*@cc_on!@*/false || !!document.documentMode;
+        }
+
+        // https://gist.github.com/davidhund/b995353fdf9ce387b8a2 
+        function _IsFlexboxSupported() {
+            var e = document.createElement('b');
+            try {
+                e.style.display = '-webkit-flex';
+                e.style.display = 'flex';
+                return !!(e.style.display === 'flex' || e.style.display === '-webkit-flex');
+            } catch (error) { }
+            return false;
+        };
+
+        if (_IsInternetExplorer() || !_IsFlexboxSupported()) {
+            document.getElementById("not-supported").style.display = 'block';
+        } else {
+            document.body.innerHTML = '<app-root></app-root>';
+        }
+    </script>
+<script src="runtime.becf8705adb56b02.js" type="module"></script><script src="polyfills.961ec5f657c87946.js" type="module"></script><script src="main.a62e37856474279c.js" type="module"></script>
 
 </body></html>
